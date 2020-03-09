@@ -21,6 +21,9 @@ class History(keras.callbacks.Callback):
         self.losses=[]
     def on_batch_end(self, batch, logs={}):
         self.losses.append(logs.get('loss'))
+        with open('128gru40_losses.pickle', 'wb') as handle:
+            pickle.dump(self.losses, handle)
+
         with open('128gru40.pickle', 'wb') as handle:
             pickle.dump(self.losses, handle)
 
