@@ -21,7 +21,7 @@ import re
 from keras.models import load_model
 import os 
 
-files = ["256LSTM20_at_epoch0.hd5", "256LSTM20_at_epoch20.hd5"]
+# files = ["256LSTM20_at_epoch0.hd5", "256LSTM20_at_epoch20.hd5"]
 #model = load_model('128gru20_at_epoch0.hd5')
 f = open('corpus.txt', 'r')
 txt = ''
